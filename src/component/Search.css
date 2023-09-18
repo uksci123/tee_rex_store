@@ -1,0 +1,13 @@
+@media screen and (min-width: 900px){
+    .search-desktop{
+        display:block !important;
+    }
+    .search-mobile{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 900px){
+    .search-desktop{
+        display: none !important;
+    }
+}

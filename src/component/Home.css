@@ -1,0 +1,42 @@
+.home{
+    margin-top: 50px;
+}
+.filter{
+    margin: 40px;
+    padding: 40px;
+    border: 1px solid rgb(217, 219, 222);
+    border-radius: 20px;
+}
+
+.search{
+    margin: 10px;
+    padding: 20px;
+}
+
+.product{
+    margin: 30px;
+}
+
+.filterDialog{
+    width: 20rem;
+    border: 1px solid rgb(217, 219, 222);
+    border-radius: 20px;
+}
+.custom-dialog-content {
+    max-height: 150vh !important; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+  
+/* Optional: To hide the default scrollbar on the dialog content */
+.custom-dialog-content::-webkit-scrollbar {
+width: 0.5em;
+}
+
+.custom-dialog-content::-webkit-scrollbar-thumb {
+background-color: #888;
+}
+@media screen and (max-width:900px){
+    .filter{
+        display: none !important;
+    }
+}

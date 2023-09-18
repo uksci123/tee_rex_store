@@ -1,0 +1,16 @@
+.cart{
+    margin-top: 60px;
+}
+@media screen and (max-width:900px){
+    .cartItem{
+        flex-direction: column;
+        /* align-items: center; */
+        padding :10px
+    }
+}
+@media screen and (max-width:600px){
+    .cartButton{
+        display: flex;
+        flex-direction: column;
+    }
+}
