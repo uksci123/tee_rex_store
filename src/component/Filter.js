@@ -4,10 +4,13 @@ import Box from '@mui/material/Box';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-function FilterComponent({filterCheckbox , onFilterCheckBox}) {
-
-
-  // console.log(filters);
+/**
+ * FilterComponent is a reusable component that displays filter options.
+ *
+ * @param {object} filterCheckbox - The filter options state.
+ * @param {function} onFilterCheckBox - Callback function to handle filter checkbox changes.
+ */
+function FilterComponent({ filterCheckbox, onFilterCheckBox }) {
   return (
     <Box>
       <FormControl component="fieldset">
@@ -65,15 +68,14 @@ function FilterComponent({filterCheckbox , onFilterCheckBox}) {
             control={<Checkbox checked={filterCheckbox.type.Polo} onChange={() => onFilterCheckBox('type', 'Polo')} />}
             label="Polo"
           />
-            <FormControlLabel
+          <FormControlLabel
             control={<Checkbox checked={filterCheckbox.type.Hoodies} onChange={() => onFilterCheckBox('type', 'Hoodie')} />}
             label="Hoodie"
           />
-            <FormControlLabel
+          <FormControlLabel
             control={<Checkbox checked={filterCheckbox.type.Basic} onChange={() => onFilterCheckBox('type', 'Basic')} />}
             label="Basic"
           />
-          
         </FormGroup>
       </FormControl>
     </Box>
